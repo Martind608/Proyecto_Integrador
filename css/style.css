@@ -1,3 +1,4 @@
+/*Estilos ESTANDAR */
 .google {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
@@ -10,31 +11,36 @@ body {
     margin: 0;
     padding: 0;
 }
-    
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: #333;
-        color: white;
-    }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* ------ */
+main {
+    display: flex;
+    flex: 1;
+}
 
 
 /* Logo en el header EN PROCESOOO () */
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 20px; 
+    margin-right: 20px;
     padding: 0;
 }
 
 .logo img {
-    height: 100px; 
-    width: auto; 
+    height: 100px;
+    width: auto;
     margin: 0;
 }
-
 
 
 nav ul {
@@ -52,7 +58,8 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
-/* Barra de busqueda */
+
+/* --------Barra de busqueda --------*/
 .search-bar {
     display: flex;
 }
@@ -61,7 +68,8 @@ nav ul li a {
     padding: 5px;
     margin-right: 5px;
 }
-/*---------------*/
+
+/*---------------------------*/
 
 footer {
     text-align: center;
@@ -70,8 +78,50 @@ footer {
     color: white;
 }
 
+/* -----------------------------------------------------------------------------------------------------*/
 
-/* Estilos para las cards de los productos  INDEEX*/
+
+/* ----------Barra lateral----------------- */
+.barra-lateral {
+    width: 20%;
+    min-width: 200px;
+    background-color: #c0bbbb;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.barra-lateralr h2 {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+}
+
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-lateral ul li {
+    margin-bottom: 0.5rem;
+}
+
+.barra-lateral ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.barra-lateral ul li input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.barra-lateral ul li label {
+    font-size: 1em;
+    color: #333;
+}
+
+/*---------------------------------------------------------------*/
+
+/* ---Estilos para las cards de los productos  INDEEX------------*/
 .products {
     display: flex;
     flex-wrap: wrap;
@@ -85,24 +135,24 @@ footer {
     border-radius: 5px;
     padding: 15px;
     margin: 10px;
-    width: calc(33% - 40px); 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: calc(33% - 40px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 /* Efecto para las tarjetas de productos */
 .product-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Imageness */
 .product-card img {
     max-width: 100%;
-    height: auto; 
+    height: auto;
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
 }
@@ -117,13 +167,15 @@ footer {
     color: #83af5b;
     margin: 5px 0;
 }
+
 .product-card .description {
     font-size: 1em;
     color: #666;
     margin: 10px 0;
 }
+
 /* Botón de compra */
-.comprar-btn{
+.comprar-btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #3cac6a;
@@ -132,12 +184,14 @@ footer {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
+
 .comprar-btn:hover {
     background-color: #123d21;
 }
 
+
 /*----------------------------------------------------------------------------------*/
-/* ALTA PRODUCTOS*/
+/*-------------------- ALTA PRODUCTOS------------------*/
 
 .product-form {
     max-width: 600px;
@@ -145,7 +199,7 @@ footer {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
 }
 
@@ -161,7 +215,9 @@ footer {
     font-weight: bold;
 }
 
-.product-form input, .product-form textarea, .product-form select {
+.product-form input,
+.product-form textarea,
+.product-form select {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -169,10 +225,11 @@ footer {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 /* En el caso de que me  decida x sacar para que se "agrande" el imput de textarea 
 textarea {
     resize: none;
-}*/ 
+}*/
 
 .product-form input[type="checkbox"] {
     width: auto;
@@ -194,9 +251,9 @@ textarea {
 .product-form button:hover {
     background-color: #0056b3;
 }
-
-/* CONTACTOO   */
-/*Para que el footer quede abajo  */ 
+/*--------------------------------------------------------*/
+/* -----------------CONTACTOO -------------  */
+/*Para que el footer quede abajo  */
 body.contacto {
     display: flex;
     flex-direction: column;
@@ -205,7 +262,9 @@ body.contacto {
 
 body.contacto main {
     flex: 1;
+    display: block;
 }
+
 /*--------------------*/
 .contact-form {
     max-width: 600px;
@@ -213,7 +272,7 @@ body.contacto main {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
 }
 
@@ -229,7 +288,8 @@ body.contacto main {
     font-weight: bold;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -251,13 +311,13 @@ body.contacto main {
 }
 
 
-/*todavia no me convece este color */ 
+/*todavia no me convece este color */
 .contact-form button:hover {
     background-color: #75d6a9;
 }
+/*---------------------------------------------------------*/
 
-
-/*"NOSOTROS " */
+/*-----------"NOSOTROS " ---------------*/
 
 body.nosotros {
     display: flex;
@@ -267,6 +327,7 @@ body.nosotros {
 
 body.nosotros main {
     flex: 1;
+    display: block;
 }
 
 .nosotros h1 {
@@ -284,6 +345,7 @@ body.nosotros main {
     color: #333;
     text-align: center;
 }
+
 footer .footer-text {
-    color: #ffffff; 
+    color: #ffffff;
 }
